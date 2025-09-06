@@ -7,7 +7,7 @@ import VisualDataModal from "./components/VisualDataModal";
 
 const App = () => {
     const [messages, setMessages] = useState([
-        { id: 1, sender: 'bot', text: "Hello! I am Jal-Vaani, your AI assistant for Indian groundwater data. How can I help you today?", type: 'text' }
+        { id: 1, sender: 'bot', text: "Hello! I am RIPPLE, your AI assistant for Indian groundwater data. How can I help you today?", type: 'text' }
     ]);
     const [inputValue, setInputValue] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -38,8 +38,8 @@ const App = () => {
     return (
         <div className="h-screen w-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/1920x1080/e0e7ff/a5b4fc?text=.')" }}>
             <header className="bg-white/70 backdrop-blur-md shadow-sm p-4 text-center">
-                <h1 className="text-2xl font-bold text-gray-800">Jal-Vaani</h1>
-                <p className="text-sm text-gray-600">Your AI Groundwater Assistant</p>
+                <h1 className="text-2xl font-bold text-gray-800">RIPPLE</h1>
+                <p className="text-sm text-gray-600">Indian AI Groundwater Assistant</p>
             </header>
 
             <main ref={chatContainerRef} className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8 chat-container">
@@ -67,14 +67,14 @@ const App = () => {
                         <SuggestedQuery text="What is the 10-year trend in Hisar?" />
                         <SuggestedQuery text="Summarize the 2023 CGWB report" />
 
-                        {/* 📊 Get Visual Data Button */}
+                        {/* 📊 Get state-wise data Button */}
                         <button
                             type="button"
                             onClick={() => setShowVisualData(true)}
-                            title="Get visual groundwater data"
+                            title=" groundwater data"
                             className="px-3 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition"
                         >
-                            📊 Get Visual Data
+                             Get state-wise data
                         </button>
                     </div>
 

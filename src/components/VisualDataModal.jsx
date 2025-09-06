@@ -32,7 +32,7 @@ const VisualDataModal = ({ onClose }) => {
           ✖
         </button>
 
-        <h2 className="text-xl font-bold mb-4">Visual Groundwater Data</h2>
+        <h2 className="text-xl font-bold mb-4"> Groundwater Data</h2>
 
         {/* State selector */}
         <div className="mb-4">
