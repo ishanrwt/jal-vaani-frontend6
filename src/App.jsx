@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './app.css';
+import './App.css';
 import Message from './components/Message';
 import SuggestedQuery from './components/SuggestedQuery';
 import { getBotResponse } from './mockData';
@@ -55,10 +55,10 @@ const App = () => {
             }
         >
             {/* ---------- HEADER ---------- */}
-            <header className="relative bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-sm p-5 flex items-center justify-between">
+            <header className="relative bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-sm p-2 flex items-center justify-between">
                 {/* Centered Title with slight right shift */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center translate-x-0.1 pointer-events-none">
-                    <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">RIPPLE</h1>
+                    <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Ripple Effect</h1>
                     <p className="text-sm text-gray-600 dark:text-gray-300">Indian AI Groundwater Assistant</p>
                 </div>
 
@@ -100,7 +100,7 @@ const App = () => {
                     <div className="flex flex-wrap justify-center gap-2 mb-4">
                         <SuggestedQuery text="Show heatmap of Punjab" />
                         <SuggestedQuery text="What is the 10-year trend in Hisar?" />
-                        <SuggestedQuery text="Summarize the 2023 CGWB report" />
+                        
 
                         {/* 📊 Get state-wise data Button */}
                         <button
